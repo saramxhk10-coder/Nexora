@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import { ArrowRight, Calendar, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import { ArrowRight, Calendar, Mail, Phone, MessageCircle } from 'lucide-react';
 
 export default function CTA() {
   const { ref, isVisible } = useScrollAnimation(0.1);
@@ -42,8 +42,8 @@ export default function CTA() {
                   <Calendar className="w-5 h-5 text-lavender-600" />
                 </div>
                 <div>
-                  <p className="text-deep-dark font-medium text-sm">Free 30-Minute Demo</p>
-                  <p className="text-gray-400 text-xs">See the system in action on your properties</p>
+                  <p className="text-deep-dark font-medium text-sm">Free 15-Minute Consultation</p>
+                  <p className="text-gray-400 text-xs">Map the system to your existing lead process</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-lg shadow-lavender-500/5 border border-gray-100">
@@ -78,7 +78,7 @@ export default function CTA() {
               <p className="  text-lavender-600 text-sm mb-8">Ready to transform your lead management? Reach out to us.</p>
               
               <div className="space-y-6">
-                <a href="mailto:hello@nexoraai.store" className="flex items-center gap-4 group">
+                <a href="mailto:muhammad.saram@nexoraia.store" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-xl bg-lavender-50 flex items-center justify-center group-hover:bg-lavender-100 transition-colors">
                     <Mail className="w-5 h-5 text-lavender-600" />
                   </div>
@@ -88,7 +88,7 @@ export default function CTA() {
                   </div>
                 </a>
 
-                <a href="tel:+971501234567" className="flex items-center gap-4 group">
+                <a href="tel:+923002502926" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-xl bg-lavender-50 flex items-center justify-center group-hover:bg-lavender-100 transition-colors">
                     <Phone className="w-5 h-5 text-lavender-600" />
                   </div>
@@ -121,12 +121,12 @@ export default function CTA() {
 
               <div className="mt-8 pt-6 border-t border-gray-100">
                 <a 
-                  href="https://calendly.com/nexoraai" 
+                  href="https://wa.me/923002502926?text=Hi%20Nexora%2C%20I%27d%20like%20to%20discuss%20the%20lead%20automation%20demo."
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-full btn-primary inline-flex items-center justify-center gap-2 group"
                 >
-                  Book Free Consultation
+                  Start a Conversation
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>

@@ -57,8 +57,8 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="heading-xl text-white mb-6 text-balance"
             >
-              Close More Property Deals with{' '}
-              <span className="gradient-text">AI-Powered Automation</span>
+              Turn New Enquiries into{' '}
+              <span className="gradient-text">Qualified Conversations</span>
             </motion.h1>
 
             <motion.p
@@ -67,9 +67,8 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="body-lg mb-10 max-w-xl mx-auto lg:mx-0 text-balance"
             >
-              NexoraAI helps UAE real estate businesses capture leads instantly, 
-              qualify buyers automatically, and book appointments 24/7 — without 
-              hiring more staff.
+              NexoraAI responds to incoming leads, asks the right qualification
+              questions, organises their details, and keeps follow-ups moving — 24/7.
             </motion.p>
 
             <motion.div
@@ -86,11 +85,11 @@ export default function Hero() {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               <button 
-                onClick={() => scrollTo('#process')}
+                onClick={() => scrollTo('#demo')}
                 className="btn-secondary inline-flex items-center justify-center gap-2"
               >
                 <Play className="w-5 h-5" />
-                See How It Works
+                Watch the Demo
               </button>
             </motion.div>
           </div>
@@ -161,7 +160,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 1 }}
           className="mt-16 pt-8 border-t border-white/10"
         >
-          <p className="text-center text-sm text-white/40 mb-6 uppercase tracking-widest">Trusted by UAE Real Estate Professionals</p>
+          <p className="text-center text-sm text-white/40 mb-6 uppercase tracking-widest">Built for UAE real estate lead workflows</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40">
             {['Dubai Marina', 'Palm Jumeirah', 'Downtown Dubai', 'Business Bay', 'JBR'].map((area) => (
               <span key={area} className="text-white/60 font-medium text-sm tracking-wide">{area}</span>

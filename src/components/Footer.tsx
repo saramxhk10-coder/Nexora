@@ -1,4 +1,4 @@
-import { MessageCircle, Mail, Phone, MapPin, Linkedin, Instagram, Twitter } from 'lucide-react';
+import { MessageCircle, Mail, Phone, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -20,15 +20,9 @@ export default function Footer() {
               Capture leads, qualify buyers, and book appointments — 24/7.
             </p>
             <div className="flex gap-3">
-              <a href="www.linkedin.com/in/saram-sheikh10" className="w-10 h-10 rounded-xl bg-lavender-50 flex items-center justify-center hover:bg-lavender-100 transition-colors">
+              <a href="https://www.linkedin.com/in/saram-sheikh10" target="_blank" rel="noopener noreferrer" aria-label="Nexora founder on LinkedIn" className="w-10 h-10 rounded-xl bg-lavender-50 flex items-center justify-center hover:bg-lavender-100 transition-colors">
                 <Linkedin className="w-5 h-5 text-gray-400" />
               </a>
-              {/* <a href="#" className="w-10 h-10 rounded-xl bg-lavender-50 flex items-center justify-center hover:bg-lavender-100 transition-colors">
-                <Instagram className="w-5 h-5 text-gray-400" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-xl bg-lavender-50 flex items-center justify-center hover:bg-lavender-100 transition-colors">
-                <Twitter className="w-5 h-5 text-gray-400" />
-              </a> */}
             </div>
           </div>
 
@@ -50,13 +44,9 @@ export default function Footer() {
           <div>
             <h4 className="text-deep-dark font-semibold mb-5">Company</h4>
             <ul className="space-y-3">
-              {['About Us', 'How It Works', 'Case Studies', 'Blog', 'Careers'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-gray-400 text-sm hover:text-lavender-600 transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li><a href="#demo" className="text-gray-400 text-sm hover:text-lavender-600 transition-colors">Watch Demo</a></li>
+              <li><a href="#process" className="text-gray-400 text-sm hover:text-lavender-600 transition-colors">How It Works</a></li>
+              <li><a href="#contact" className="text-gray-400 text-sm hover:text-lavender-600 transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -91,10 +81,7 @@ export default function Footer() {
           <p className="text-gray-300 text-sm">
             &copy; {currentYear} NexoraAI. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <a href="#" className="text-gray-300 text-sm hover:text-gray-500 transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-300 text-sm hover:text-gray-500 transition-colors">Terms of Service</a>
-          </div>
+          <p className="text-gray-300 text-xs">Privacy and service terms are provided with each client agreement.</p>
         </div>
       </div>
     </footer>

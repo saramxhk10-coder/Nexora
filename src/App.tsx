@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Demo from './components/Demo';
 import Problem from './components/Problem';
 import Process from './components/Process';
 import Services from './components/Services';
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Demo />
         <Problem />
         <Process />
         <Services />
