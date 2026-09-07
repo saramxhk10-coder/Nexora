@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #14101c;
+  --color-ink-deep: #0d0a14;
+  --color-panel: #1c1626;
+  --color-line: #2e2438;
+  --color-violet: #7c5cff;
+  --color-violet-soft: #a996ff;
+  --color-mist: #f3f0f7;
+  --color-mist-dim: #b3a9c4;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-ink-deep: var(--color-ink-deep);
+  --color-panel: var(--color-panel);
+  --color-line: var(--color-line);
+  --color-violet: var(--color-violet);
+  --color-violet-soft: var(--color-violet-soft);
+  --color-mist: var(--color-mist);
+  --color-mist-dim: var(--color-mist-dim);
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-ink);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-violet-soft);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.prose-legal section + section {
+  border-top: 1px solid var(--color-line);
+  padding-top: 2rem;
+}
